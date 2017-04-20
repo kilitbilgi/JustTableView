@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var table:UITableView!
+    
+    var generalDataSource:GeneralDataSource?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let array = ["apple","orange"]
+        self.generalDataSource = TableDataSource(array: array)
+        
+        self.table.delegate = self.generalDataSource
+        self.table.dataSource = self.generalDataSource
+
+        self.table.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
