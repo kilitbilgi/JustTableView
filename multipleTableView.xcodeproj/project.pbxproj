@@ -12,6 +12,9 @@
 		F980560E1EA813380003D3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F980560C1EA813380003D3F5 /* Main.storyboard */; };
 		F98056101EA813380003D3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F980560F1EA813380003D3F5 /* Assets.xcassets */; };
 		F98056131EA813380003D3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98056111EA813380003D3F5 /* LaunchScreen.storyboard */; };
+		F9FBF86D1F2A6278007AC49F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF86C1F2A6278007AC49F /* Cell.swift */; };
+		F9FBF8711F2A628D007AC49F /* GeneralDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF86F1F2A628D007AC49F /* GeneralDataSource.swift */; };
+		F9FBF8721F2A628D007AC49F /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF8701F2A628D007AC49F /* TableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F980560F1EA813380003D3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F98056121EA813380003D3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F98056141EA813380003D3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FBF86C1F2A6278007AC49F /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		F9FBF86F1F2A628D007AC49F /* GeneralDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralDataSource.swift; sourceTree = "<group>"; };
+		F9FBF8701F2A628D007AC49F /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		F98056071EA813380003D3F5 /* multipleTableView */ = {
 			isa = PBXGroup;
 			children = (
-				F98056081EA813380003D3F5 /* AppDelegate.swift */,
-				F980560A1EA813380003D3F5 /* ViewController.swift */,
-				F980560C1EA813380003D3F5 /* Main.storyboard */,
+				F9FBF8741F2A62B3007AC49F /* Main */,
+				F9FBF86E1F2A627F007AC49F /* DataSource */,
+				F9FBF86B1F2A626E007AC49F /* Cell */,
+				F9FBF8731F2A62A3007AC49F /* UI */,
 				F980560F1EA813380003D3F5 /* Assets.xcassets */,
-				F98056111EA813380003D3F5 /* LaunchScreen.storyboard */,
 				F98056141EA813380003D3F5 /* Info.plist */,
 			);
 			path = multipleTableView;
+			sourceTree = "<group>";
+		};
+		F9FBF86B1F2A626E007AC49F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F9FBF86C1F2A6278007AC49F /* Cell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F9FBF86E1F2A627F007AC49F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F9FBF86F1F2A628D007AC49F /* GeneralDataSource.swift */,
+				F9FBF8701F2A628D007AC49F /* TableDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		F9FBF8731F2A62A3007AC49F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F980560C1EA813380003D3F5 /* Main.storyboard */,
+				F98056111EA813380003D3F5 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F9FBF8741F2A62B3007AC49F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F98056081EA813380003D3F5 /* AppDelegate.swift */,
+				F980560A1EA813380003D3F5 /* ViewController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +180,9 @@
 			files = (
 				F980560B1EA813380003D3F5 /* ViewController.swift in Sources */,
 				F98056091EA813380003D3F5 /* AppDelegate.swift in Sources */,
+				F9FBF8721F2A628D007AC49F /* TableDataSource.swift in Sources */,
+				F9FBF86D1F2A6278007AC49F /* Cell.swift in Sources */,
+				F9FBF8711F2A628D007AC49F /* GeneralDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +346,7 @@
 				F98056191EA813380003D3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
